@@ -11,6 +11,7 @@ This application requires a globally-installed Node.js and npm. It also requires
 ## Usage
 
 Clone this application into a directory of your choice. Use git to clone the source.
+
 Clone: `git clone https://github.com/dlwhitehurst/bend`
 
 Your Bend application is created in the directory where you ran the clone operation. To begin, `cd bend` into the project directory.
