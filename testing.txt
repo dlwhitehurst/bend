@@ -1,0 +1,11 @@
+id = 56ad70e3dad42ec30433bc3e (David, Whitehurst)
+
+curl -H "Content-type: application/json" -X POST -d '{"firstName":"Patty","lastName":"Whitehurst","email":"patty@ciwise.com","username":"patty","password":"pass987"}' http://localhost:3000/users
+
+curl -H "Content-type: application/json" -X POST -d '{"firstName":"David","lastName":"Whitehurst","email":"david@ciwise.com","username":"david","password":"pass123"}' http://localhost:3000/users
+
+curl -H "Content-type: application/json" -X POST -d '{"firstName":"David","lastName":"Whitehurst","email":"david@ciwise.com","username":"david","password":"pass123"}' http://localhost:3000/users
+
+curl -H "Content-type: application/json" -X POST -d '{"firstName":"David","lastName":"Whitehurst","email":"david@ciwise.com","username":"david","password":"pass123"}' http://localhost:3000/users
+
+curl -H "Content-type: application/json" -X POST -d '{"firstName":"David","lastName":"Whitehurst","email":"david@ciwise.com","username":"david","password":"pass123"}' http://localhost:3000/users

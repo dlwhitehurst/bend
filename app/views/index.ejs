@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title><%= title %></title>
+	 <!-- Latest compiled and minified CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	 <!-- Optional theme -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 		integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	 <!-- Latest compiled and minified JavaScript -->
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	 
+	 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+	 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+	 <script>hljs.initHighlightingOnLoad();</script>	 
+  </head>
+  <body style="padding-left:20px;">
+     <h1><%= title %></h1>
+	 <p>The purpose of this page is to describe the REST API that this server application hosts. The documentation is provided here for reference:</p>
+	 
+	 <hr/>
+	 <h3>/users - GET</h3>
+	 <p>This method only requires a valid HTTP GET request of the resource URL above.</p>
+	 <hr/>
+	 <h3>/users - POST</h3>
+	 <p>This method requires a valid HTTP POST request, header, and JSON schema body model. The header must contain "Content-type:application/json" and the JSON body should match this model:</p>
+	 <p><pre><code class="json">
+		{
+			// JSON User Schema
+	 		"firstName":"required",
+	 	   	"lastName":"required",
+	 	  	"email":"",
+	 	 	"username":"required",
+	 	   	"password":"",
+	 	   	"website":""
+		}</code></pre></p>
+	<hr/>
+	<h3>/users/[userId] - GET</h3>
+	<p>This method retrieves a User document using the _id of the User schema model document. The method only requires a valid HTTP GET request using the resource URL above and replacing [userId] with a valid userId.</p>
+	<hr/>
+	<h3>/users/[userId] - PUT</h3>
+	<p>This method updates a User document using the _id of the User schema model document, however, a valid HTTP PUT request requires the header "Content-type:application/json" and a JSON body with schema members to be updated.</p>
+	<p><pre><code class="json">
+		{
+			// e.g. only
+			"lastName":"Updated"
+		}
+	</code></pre></p>
+	<hr/>
+	<h3>/users/[userId] - DELETE</h3>
+	<p>This method deletes a User document using the _id of the User schema model document, however a valid HTTP DELETE request is sent using the resource URL above and replacing [userId] with a valid userId.</p>
+  </body>
+</html>

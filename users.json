@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "56ad70e3dad42ec30433bc3e",
+    "firstName": "David",
+    "lastName": "Whitehurst",
+    "email": "david@ciwise.com",
+    "username": "david",
+    "password": "pass123",
+    "__v": 0
+  },
+  {
+    "_id": "56b1277a82731905077e3114",
+    "firstName": "Patty",
+    "lastName": "Whitehurst",
+    "email": "Whitehurst.patricia@gmail.com",
+    "username": "sweetpea",
+    "password": "opensesame",
+    "__v": 0
+  },
+  {
+    "_id": "56b12a9b82731905077e3115",
+    "firstName": "Aaron",
+    "lastName": "Whitehurst",
+    "email": "guitar399@gmail.com",
+    "username": "awhitehurst",
+    "password": "changeme",
+    "__v": 0
+  },
+  {
+    "_id": "56b12ab082731905077e3116",
+    "firstName": "Philip",
+    "lastName": "Whitehurst",
+    "email": "philip@gmail.com",
+    "username": "pwhitehurst",
+    "password": "changeme",
+    "__v": 0
+  }
+]
