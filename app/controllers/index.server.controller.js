@@ -19,7 +19,7 @@ exports.render = function(req, res) {
     }
 	
 	res.render('index', {
-		title: 'Bend (Backend) Resource API',
+		title: 'Bend (BackEND) Resource API',
 		views: sess.views
 	})
 }
