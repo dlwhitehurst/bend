@@ -18,6 +18,7 @@ var UserSchema = new mongoose.Schema({
 		trim: true,
 		required: true
 	},
+	phone: String,
 	email: String,
 	website: {
 		type: String,
@@ -32,13 +33,6 @@ var UserSchema = new mongoose.Schema({
 			}
 		}
 	},
-	username: {
-		type: String,
-		trim: true,
-		unique: true,
-		required: true
-	},
-	password: String,
 	created: {
 		type: Date,
 	default: Date.now
